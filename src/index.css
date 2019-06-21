@@ -1,0 +1,81 @@
+:root {
+  --btn-size: 50px;
+  --btn-margin: 5px;
+  --keyboard-padding: 50px;
+  --keyboard-height: 315px;
+}
+
+body.keyboard-opened {
+  padding-bottom: var(--keyboard-height);
+}
+
+input {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.simple-keyboard.hg-theme-default div.hg-button {
+  max-width: var(--btn-size);
+  width: var(--btn-size);
+  height: var(--btn-size);
+}
+
+.simple-keyboard.hg-theme-default {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #cacfd5;
+  padding: var(--keyboard-padding);
+  height: var(--keyboard-height);
+}
+
+.simple-keyboard.hg-layout-default .hg-button.hg-red {
+  color: white;
+}
+
+.simple-keyboard.hg-layout-default .hg-button.hg-highlight {
+  box-shadow: 0px 0px 40px 5px rgba(255, 255, 0, 0.5);
+  z-index: 1;
+}
+
+.hg-btn--pull-right {
+  margin-left: auto;
+}
+
+.hg-btn--double-width {
+  width: calc(var(--btn-size) * 2 + var(--btn-margin));
+  min-width: calc(var(--btn-size) * 2 + var(--btn-margin));
+}
+
+.hg-btn--triple-width {
+  width: calc(var(--btn-size) * 3 + var(--btn-margin) * 2);
+  min-width: calc(var(--btn-size) * 3 + var(--btn-margin) * 2);
+}
+
+.simple-keyboard.hg-layout-default .hg-btn--left-1.hg-button {
+  margin-right: calc(var(--btn-size) + var(--btn-margin));
+}
+
+.simple-keyboard.hg-layout-default .hg-btn--left-2.hg-button {
+  margin-right: calc(var(--btn-size) * 2 + var(--btn-margin) * 2);
+}
+
+.simple-keyboard.hg-layout-default .hg-btn--ok.hg-button {
+  background: #008bd0;
+  color: #ffffff;
+  position: absolute;
+  height: calc(var(--btn-size) * 2 + var(--btn-margin));
+  right: calc(var(--btn-size) + var(--btn-margin) + var(--keyboard-padding));
+}
+
+.simple-keyboard.hg-layout-default .hg-btn--zero-btn.hg-button {
+  width: calc(var(--btn-size) * 3 + var(--btn-margin) * 2);
+  min-width: calc(var(--btn-size) * 3 + var(--btn-margin) * 2);
+  margin-right: calc(var(--btn-size) + var(--btn-margin) * 2);
+}

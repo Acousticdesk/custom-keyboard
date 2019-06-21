@@ -1,0 +1,10 @@
+export const hideBtn = "▼";
+export const triangleBtn = "△|△";
+export const triangleBtnTest = /(△\|△)/;
+export const degreesBtns = ["0°", "90°", "180°", "270°"];
+export const floatBtns = [".75", ".50", ".25", "."];
+export const zeroBtn = "0";
+export const plusMinusBtn = "+/-";
+export const RLBtn = "R=L";
+export const OKBtn = "OK";
+export const hideBtnTest = /▼/;
